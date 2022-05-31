@@ -279,7 +279,7 @@ console.log(n);
 */
 
 
-
+/*
 // 021 Truthy and falsy values
 
 // 5 falsy values - 0, '', undefined, null, NaN
@@ -305,4 +305,96 @@ if(height) {
     console.log('YAY! Height is defined!');
 } else {
     console.log('Height is undefined!');
+}
+*/
+
+
+/*
+// 022 Equality Operators
+
+const age = 18;
+ 
+if(age === 18){
+    console.log('You just became an adult (strict)')
+}
+
+if(age == '18'){
+    console.log('You just became an adult (loose)')  // Loose equality operator should be avoided
+}
+
+const favourite = Number(prompt('What is your favorite number?')); 
+console.log(favourite);
+console.log(typeof favourite);
+
+if(favourite === 23) {
+    console.log('Cool 23 is amazing number');
+} else if(favourite === 7) {
+    console.log('7 is also cool number');
+} else {
+    console.log('Number is not 7 or 23')
+}
+
+if(favourite !== 23){
+    console.log('Why not 23');
+}
+*/
+
+
+/*
+// 024 Logicacl Operators
+
+const hasDriversLicence = true; // a
+const hasGoodVision = true; // B
+
+const isTired = false; // 
+
+console.log(hasDriversLicence && hasGoodVision); // && AND operator
+console.log(hasDriversLicence || hasGoodVision); // || OR operator
+console.log(!hasDriversLicence); // ! NOT operator
+
+const shouldDrive = hasDriversLicence && hasGoodVision && !isTired;
+
+if(shouldDrive){
+    console.log('Sara is good to drive');
+} else {
+    console.log('Someone else should drive');
+}
+
+console.log(hasDriversLicence && hasGoodVision && isTired); // && AND operator
+*/
+
+
+
+
+//025 Coding challenge #3
+
+// const dolphinsScore1 = 96;
+// const dolphinsScore2 = 108;
+// const dolphinsScore3 = 89;
+
+// const koalasScore1 = 88;
+// const koalasScore2 = 91;
+// const koalasScore3 = 110;
+
+const dolphinsScore1 = 97;
+const dolphinsScore2 = 112;
+const dolphinsScore3 = 90;
+
+const koalasScore1 = 109;
+const koalasScore2 = 95;
+const koalasScore3 = 90;
+
+const dolphinsAverageScore = (dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3;
+console.log('Doplhins average: ', dolphinsAverageScore);
+const koalasAverageScore = (koalasScore1 + koalasScore2 + koalasScore3) / 3;
+console.log('Koalas average: ', koalasAverageScore);
+
+if (dolphinsAverageScore === koalasAverageScore && dolphinsAverageScore >= 100) {
+    console.log("It's a draw");
+} else if (dolphinsAverageScore > koalasAverageScore && dolphinsAverageScore >= 100) {
+    console.log('Dolphins wins!');
+} else if (koalasAverageScore > dolphinsAverageScore && koalasAverageScore >= 100) {
+    console.log('Koalas wins!');
+} else {
+    console.log('There is no winner!')
 }
