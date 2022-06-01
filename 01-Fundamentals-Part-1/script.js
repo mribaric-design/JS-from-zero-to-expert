@@ -365,7 +365,7 @@ console.log(hasDriversLicence && hasGoodVision && isTired); // && AND operator
 
 
 
-
+/*
 //025 Coding challenge #3
 
 // const dolphinsScore1 = 96;
@@ -398,3 +398,78 @@ if (dolphinsAverageScore === koalasAverageScore && dolphinsAverageScore >= 100) 
 } else {
     console.log('There is no winner!')
 }
+*/
+
+
+/*
+// 026 The switch statement
+
+const day = 'friday';
+
+switch(day) {
+    case 'monday':  // day === monday
+        console.log('Plan course structure');
+        break;
+    case 'tuesday':
+        console.log('Prepare theory video');
+        break;
+    case 'wendesday':
+    case 'thursday':
+        console.log('Write code examples');
+        break;
+    case 'friday':
+        console.log('Record videos');
+        break;
+    default:
+        console.log('Not a valid day');
+}
+
+
+if(day === 'monday') {
+    console.log('Plan course structure');
+} else if (day === 'tuesday') {
+    console.log('Prepare theory video');
+} else if (day === 'wendesday' || day === 'thursday') {
+    console.log('Write code examples');
+} else if (day === 'friday') {
+    console.log('Record videos');
+} else {
+    console.log('Not a valid day');
+}
+*/
+
+
+// 027 Statements and expresions 
+
+/*
+// 028 The conditional operator
+
+const age = 18 ;
+
+age >= 18 ? console.log('I like to dring wine!'):
+console.log('I like to drink water!');
+
+const drink = age >= 18 ? 'wine!' : 'water!';
+
+console.log(`I like to drink ${drink}`);
+
+console.log(`I like to drink ${age >= 18 ? 'wine!' : 'water!'}`);
+
+
+let drink2;
+
+if (age >= 18) {
+    drink2 = 'wine!';
+} else {
+    drink2 = 'water!';
+}
+
+console.log(`I like to drink ${drink2}`)
+*/
+
+// 029 Coding challenge #4
+
+const billValue = 430;
+
+
+console.log(`The bill was ${billValue}, the tip was ${billValue >= 50 && billValue <= 300 ? 15/100*billValue : 20/100*billValue} and the total value is ${billValue >= 50 && billValue <= 300 ? 15/100*billValue + billValue : 20/100*billValue + billValue}`)
