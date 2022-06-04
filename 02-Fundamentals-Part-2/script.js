@@ -45,7 +45,7 @@ console.log(appleOrangeJuice);
 const num = Number('23');
 */
 
-
+/*
 // Function declaration
 
 const age1 = calcAge1(1993);
@@ -81,3 +81,21 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 }
 
 console.log(yearsUntilRetirement(1993, 'Marko'));
+
+*/
+
+
+// 036 Functions calling other functions
+
+function cutFruitPieces(fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges) {
+    const applePieces = cutFruitPieces(apples);
+    const orangePieces= cutFruitPieces(oranges);
+    const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange`;
+    return juice;
+}
+
+console.log(fruitProcessor(2,3));
